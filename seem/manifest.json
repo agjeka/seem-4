@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Login Extension",
+  "version": "1.0",
+  "description": "Log in to Spotify through a Chrome extension",
+  "permissions": ["identity", "storage"],
+  "host_permissions": ["https://api.spotify.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
